@@ -1,21 +1,11 @@
-# Core framework
 streamlit
-
-# YOLOv8 and dependencies
 ultralytics>=8.0.0
-
-# Transformers for captioning (ViT-GPT2)
 transformers
 torch
 torchvision
 timm
-
-# Image and plotting
 Pillow
 matplotlib
-
-# Data handling
 pandas
-
-# Optional but safe: lightweight OpenCV headless for compatibility
 opencv-python-headless>=4.7.0.72,<4.9.0.80
+numpy<2.0.0
