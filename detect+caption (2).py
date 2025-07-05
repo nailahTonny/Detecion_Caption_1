@@ -103,7 +103,8 @@ if uploaded_files:
             st.subheader(f"🖼️ Image {i}")
 
             image_with_boxes, labels = detect_objects(image.copy(), i)
-            st.image(image_with_boxes, caption=f"Detected Objects: {', '.join(labels)}", use_column_width=True)
+            st.image(image_with_boxes, caption=f"Detected Objects: {', '.join(labels)}", use_container_width=True)
+
 
             cap1, cap2, cap3 = generate_captions(image, labels)
             st.markdown("**Choose the best caption:**")
